@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Waker</string>
+    <string-array name="repeat_options">
+        <item>once</item>
+        <item>daily</item>
+        <item>weekly</item>
+    </string-array>
+</resources>

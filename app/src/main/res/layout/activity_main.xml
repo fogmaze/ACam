@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/main_repeatSelect"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:entries="@array/repeat_options"
+        app:layout_constraintStart_toStartOf="@+id/main_name"
+        app:layout_constraintTop_toBottomOf="@+id/main_name" />
+
+    <EditText
+        android:id="@+id/main_timeInput"
+        android:layout_width="285dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="time"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="@+id/main_repeatSelect"
+        app:layout_constraintTop_toBottomOf="@+id/main_repeatSelect" />
+
+    <Button
+        android:id="@+id/main_summit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:text="submit"
+        app:layout_constraintStart_toEndOf="@+id/main_repeatSelect"
+        app:layout_constraintTop_toTopOf="@+id/main_repeatSelect" />
+
+    <EditText
+        android:id="@+id/main_extraDes"
+        android:layout_width="285dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="days/date"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/main_timeInput"
+        app:layout_constraintTop_toBottomOf="@+id/main_timeInput" />
+
+    <EditText
+        android:id="@+id/main_name"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/main_remove"
+        android:layout_width="107dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="4dp"
+        android:text="remove"
+        app:layout_constraintStart_toStartOf="@+id/main_ruleSpinner"
+        app:layout_constraintTop_toTopOf="@+id/main_ruleSpinner" />
+
+    <Spinner
+        android:id="@+id/main_ruleSpinner"
+        android:layout_width="183dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="308dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_ruleShow"
+        android:layout_width="295dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/main_ruleSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/main_ruleSpinner" />
+
+    <Button
+        android:id="@+id/main_stop"
+        android:layout_width="183dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="528dp"
+        android:text="Stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
